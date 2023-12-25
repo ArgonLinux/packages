@@ -10,9 +10,11 @@ proc handlePkg*(dir: string) =
   let packageInfo = packageInfo(
     readFile(dir / "info.toml")
   )
+
+  discard execCmd("chmod +x " & dir / "build.sh")
   
   let res = execCmd(
-    "sh " & dir / "build.sh"
+    "ARGON_ZIP_SHA=" & packageInfo.source.sha256sums[0] & " " & dir / "build.sh"
   )
   
   if res != 0:

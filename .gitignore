@@ -2,3 +2,4 @@ bin-pkgs/*
 */argon-out
 *.zip
 aggregate
+hacky_sha
