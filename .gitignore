@@ -1,5 +1,1 @@
-bin-pkgs/*
-*/argon-out
-*.zip
-aggregate
-hacky_sha
+add_package
