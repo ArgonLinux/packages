@@ -29,6 +29,7 @@ proc main =
       "version": version,
       "maintainer": maintainer,
       "depends": [],
+      "optional_depends": [],
       "provides": [],
       "files": []
     }
@@ -36,7 +37,7 @@ proc main =
 
   writeFile(repo & ".json", data.pretty())
 
-  info "Done. You'll need to add dependencies, package provides and files manually."
+  info "Done. You'll need to add dependencies, optional dependencies, package provides and files manually."
 
 when isMainModule:
   main()

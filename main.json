@@ -57,6 +57,7 @@
       "maintainer": "Trayambak Rai (gh:xTrayambak)",
       "depends": ["gcc", "clang"],
       "provides": ["nim", "nimble"],
+      "optional_depends": [],
       "files": ["/usr/bin/nim", "/usr/bin/nimble"]
     }
   ]
