@@ -80,6 +80,16 @@
       "optional_depends": [],
       "provides": [],
       "files": []
+    },
+    {
+      "name": "shunya",
+      "license": "GPL3",
+      "version": "0.1.0",
+      "maintainer": "Trayambak Rai (gh:xTrayambak,mail:trayambakrai@proton.me)",
+      "depends": [],
+      "optional_depends": [],
+      "provides": ["shunya"],
+      "files": ["/usr/bin/shunya"]
     }
   ]
 }
