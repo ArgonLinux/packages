@@ -55,10 +55,31 @@
       "license": "BSD3",
       "version": "2.0.2",
       "maintainer": "Trayambak Rai (gh:xTrayambak)",
-      "depends": ["gcc", "clang"],
-      "provides": ["nim", "nimble"],
+      "depends": [
+        "gcc",
+        "clang"
+      ],
+      "provides": [
+        "nim",
+        "nimble"
+      ],
       "optional_depends": [],
-      "files": ["/usr/bin/nim", "/usr/bin/nimble"]
+      "files": [
+        "/usr/bin/nim",
+        "/usr/bin/nimble",
+        "/usr/bin/atlas",
+        "/usr/bin/testament"
+      ]
+    },
+    {
+      "name": "bash",
+      "license": "GPL3",
+      "version": "5.2.26-release",
+      "maintainer": "Trayambak Rai (mail:trayambakrai@proton.me,gh:xTrayambak)",
+      "depends": [],
+      "optional_depends": [],
+      "provides": [],
+      "files": []
     }
   ]
 }
