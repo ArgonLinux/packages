@@ -1,25 +1,7 @@
 {
   "name": "main",
-  "revision_date": "23/12/2023 17:29:32",
+  "revision_date": "13/10/2024 16:22:00",
   "packages": [
-    {
-      "name": "linux",
-      "license": "GPL2",
-      "version": "6.6.7",
-      "maintainer": "Abhiraj Rik (github:abrik1)",
-      "depends": [
-        "gcc"
-      ],
-      "optional_depends": [
-        "clang",
-        "ncurses"
-      ],
-      "provides": [
-        "linux",
-        "kconfig"
-      ],
-      "files": []
-    },
     {
       "name": "trayfetch",
       "license": "GPL2",
@@ -30,66 +12,16 @@
       "provides": [
         "trayfetch"
       ],
-      "files": [
-        "/usr/bin/trayfetch"
+      "files": {
+        "trayfetch": "/usr/bin/trayfetch"
+      },
+      "fetch": {
+	"url": "https://github.com/xTrayambak/trayfetch",
+	"method": "git"
+      },
+      "build": [
+        "nimble build --define:release"
       ]
-    },
-    {
-      "name": "neofetch",
-      "license": "MIT",
-      "version": "7.1.0",
-      "maintainer": "Abhiraj Rik (github:abrik1)",
-      "depends": [
-        "bash"
-      ],
-      "optional_depends": [],
-      "provides": [
-        "neofetch"
-      ],
-      "files": [
-        "/usr/bin/neofetch"
-      ]
-    },
-    {
-      "name": "nim",
-      "license": "BSD3",
-      "version": "2.0.2",
-      "maintainer": "Trayambak Rai (gh:xTrayambak)",
-      "depends": [
-        "gcc",
-        "clang"
-      ],
-      "provides": [
-        "nim",
-        "nimble"
-      ],
-      "optional_depends": [],
-      "files": [
-        "/usr/bin/nim",
-        "/usr/bin/nimble",
-        "/usr/bin/atlas",
-        "/usr/bin/testament"
-      ]
-    },
-    {
-      "name": "bash",
-      "license": "GPL3",
-      "version": "5.2.26-release",
-      "maintainer": "Trayambak Rai (mail:trayambakrai@proton.me,gh:xTrayambak)",
-      "depends": [],
-      "optional_depends": [],
-      "provides": [],
-      "files": []
-    },
-    {
-      "name": "shunya",
-      "license": "GPL3",
-      "version": "0.1.0",
-      "maintainer": "Trayambak Rai (gh:xTrayambak,mail:trayambakrai@proton.me)",
-      "depends": [],
-      "optional_depends": [],
-      "provides": ["shunya"],
-      "files": ["/usr/bin/shunya"]
     }
   ]
 }
