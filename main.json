@@ -22,6 +22,26 @@
       "build": [
         "nimble build --define:release"
       ]
+    },
+    {
+      "name": "nim",
+      "license": "BSD3",
+      "version": "2.2.0",
+      "maintainer": "Trayambak Rai (mail:trayambakrai@proton.me,github:xTrayambak)",
+      "depends": [],
+      "optional_depends": [],
+      "provides": ["nim", "nimble", "c2nim"],
+      "files": {
+        "nim": "/usr/bin/nim"
+      },
+      "fetch": {
+	"url": "https://github.com/nim-lang/Nim/archive/refs/tags/v2.2.0.zip",
+	"method": "http"
+      },
+      "build": [
+        "nim c koch.nim",
+	"./koch boot -d:release -d:nimUseLinenoise"
+      ]
     }
   ]
 }
