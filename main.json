@@ -42,7 +42,8 @@
 	"cd Nim-{VERSION}",
 	"echo $PWD",
         "nim c koch.nim",
-	"./koch boot -d:release -d:nimUseLinenoise"
+	"./koch boot -d:release -d:nimUseLinenoise",
+	"cd bin/"
       ]
     }
   ]
