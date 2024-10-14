@@ -39,6 +39,7 @@
 	"method": "http"
       },
       "build": [
+	"cd Nim-{VERSION}",
         "nim c koch.nim",
 	"./koch boot -d:release -d:nimUseLinenoise"
       ]
