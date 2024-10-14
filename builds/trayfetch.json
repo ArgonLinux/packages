@@ -1,0 +1,9 @@
+{
+      "fetch": {
+	"url": "https://github.com/xTrayambak/trayfetch",
+	"method": "git"
+      },
+      "build": [
+        "nimble build --define:release"
+      ]
+}

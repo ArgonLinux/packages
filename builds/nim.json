@@ -1,0 +1,13 @@
+{
+      "fetch": {
+	"url": "https://github.com/nim-lang/Nim/archive/refs/tags/v2.2.0.zip",
+	"method": "http"
+      },
+      "build": [
+	"cd Nim-{VERSION}",
+	"echo $PWD",
+        "nim c koch.nim",
+	"./koch boot -d:release -d:nimUseLinenoise",
+	"cd bin/"
+      ]
+}

@@ -7,21 +7,14 @@
       "license": "GPL2",
       "version": "0.1.0",
       "maintainer": "Trayambak Rai (mail:trayambakrai@proton.me,github:xTrayambak)",
-      "depends": [],
+      "depends": ["nim"],
       "optional_depends": [],
       "provides": [
         "trayfetch"
       ],
       "files": {
         "trayfetch": "/usr/bin/trayfetch"
-      },
-      "fetch": {
-	"url": "https://github.com/xTrayambak/trayfetch",
-	"method": "git"
-      },
-      "build": [
-        "nimble build --define:release"
-      ]
+      }
     },
     {
       "name": "nim",
@@ -33,18 +26,7 @@
       "provides": ["nim", "nimble", "c2nim"],
       "files": {
         "nim": "/usr/bin/nim"
-      },
-      "fetch": {
-	"url": "https://github.com/nim-lang/Nim/archive/refs/tags/v2.2.0.zip",
-	"method": "http"
-      },
-      "build": [
-	"cd Nim-{VERSION}",
-	"echo $PWD",
-        "nim c koch.nim",
-	"./koch boot -d:release -d:nimUseLinenoise",
-	"cd bin/"
-      ]
+      }
     }
   ]
 }
