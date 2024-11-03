@@ -27,6 +27,18 @@
       "files": {
         "nim": "/usr/bin/nim"
       }
+    },
+    {
+      "name": "arpm",
+      "license": "GPL2",
+      "version": "0.1.0",
+      "maintainer": "Trayambak Rai (mail:trayambakrai@proton.me,github:xTrayambak)",
+      "depends": ["nim"],
+      "optional_depends": [],
+      "provides": ["arpm"],
+      "files": {
+        "arpm": "/usr/bin/arpm"
+      }
     }
   ]
 }

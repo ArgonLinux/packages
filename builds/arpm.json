@@ -1,0 +1,9 @@
+{
+      "fetch": {
+	"url": "https://github.com/ArgonLinux/arpm",
+	"method": "git"
+      },
+      "build": [
+        "nimble build --define:release"
+      ]
+}
